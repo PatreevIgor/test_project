@@ -5,6 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'faye'
+gem 'thin', require: false
+gem 'sync'
+
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

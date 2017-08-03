@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :messages
   resources :boards
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
